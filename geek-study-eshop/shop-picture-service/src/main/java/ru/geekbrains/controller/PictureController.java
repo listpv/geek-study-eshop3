@@ -38,4 +38,10 @@ public class PictureController {
             resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
         }
     }
+
+    @GetMapping("/removeOne/{picture_id}")
+    public String removeOne(@PathVariable(name = "picture_id") Long pictureId) {
+        pictureService.deleteById(pictureId);
+        return "redirect:/products";
+    }
 }
