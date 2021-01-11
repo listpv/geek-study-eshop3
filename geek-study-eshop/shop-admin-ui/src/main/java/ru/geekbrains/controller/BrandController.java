@@ -14,6 +14,8 @@ import ru.geekbrains.error.NotFoundException;
 import ru.geekbrains.persist.model.Brand;
 import ru.geekbrains.persist.repo.BrandRepository;
 
+
+// заглушка
 @Controller
 public class BrandController {
 
